@@ -1,0 +1,51 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../css/helpers/variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.mt-25 {
+  margin-top: -25px;
+}
+
+.obj-cover{
+  object-fit: cover;
+}
+
+.obj-position-bottom {
+  object-position: bottom;
+}
+
+.bg-gray {
+  background-color: #F8F9FA;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: #31C1DF;
+  margin: 5px auto;
+}
+
+.title-white::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: white;
+  margin: 5px auto;
+}
+
+.header {
+  height: 600px;
+  background-image: url('../img/luca-bravo-O453M2Liufs.jpg');
+  background-position: center;
+  background-size: cover;
+  &__title{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}

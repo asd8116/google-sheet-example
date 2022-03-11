@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <title>Google Sheet</title>
+  </head>
+
+  <body>
+    <div class="container pt-4 border border-light">
+      <h1 class="text-center mb-4 fw-normal">六角西餐廳</h1>
+
+      <form
+        class="row gx-2 gy-3"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdN0M30GB6NSQxfeAhWK0B4PSpuIPGVLnoWo4TrksqtkeKtRA/formResponse"
+        method="POST"
+      >
+        <div class="col-md-6 col-12">
+          <label for="name" class="form-label">姓名</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="entry.104959259"
+          />
+        </div>
+
+        <div class="col-md-6 col-12">
+          <label for="phone" class="form-label">電話</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            name="entry.403616441"
+          />
+        </div>
+
+        <div class="col-12">
+          <label for="date" class="form-label">日期</label>
+          <input
+            type="date"
+            class="form-control"
+            id="date"
+            name="entry.650799372"
+          />
+        </div>
+
+        <div class="col-12">
+          <label for="people" class="form-label">用餐人數</label>
+          <select class="form-select" id="people" name="entry.1491692660">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <div class="col-12 mb-2">
+          <p class="mb-2">其他項目</p>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="kidSeat"
+              name="entry.901461210"
+              value="需要兒童座椅"
+            />
+            <label class="form-check-label" for="kidSeat">需要兒童座椅</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="vegetarian"
+              name="entry.901461210"
+              value="素食餐點"
+            />
+            <label class="form-check-label" for="vegetarian">素食餐點</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="smoke"
+              name="entry.901461210"
+              value="吸煙區"
+            />
+            <label class="form-check-label" for="smoke">吸煙區</label>
+          </div>
+        </div>
+        <button class="btn btn-dark" type="submit">送出</button>
+      </form>
+    </div>
+  </body>
+</html>
